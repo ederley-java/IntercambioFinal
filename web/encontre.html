@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encontre seu intercâmbio - Buscador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/4d680928e7.js"></script>
+        <script src="https://kit.fontawesome.com/1ff22901bb.js" crossorigin="anonymous"></script>
+        <style>
+           
+            * {
+                margin:0;
+            }
+            
+            #menu-social {
+                background-color:white;
+            }
+            
+            #menu-social li a{
+                font-weight: bold;
+                color: #359db8;
+            }
+
+            #menu-social li a:hover{
+                font-weight: bold;
+                color: #f9e03c;
+            }
+                
+            #menu-site {
+                font-family:Helvetica, sans-serif;
+                font-size:20px;
+                background-color: #359db8;
+            }
+            
+            #header {
+                background-color: #359db8;                
+            }
+            
+            #h1 {
+                font-family:Helvetica, sans-serif;
+                font-size:30px;
+                font-weight: bold;
+                background-color: #359db8;
+                color: #f9e03c;
+            }
+            
+            #busca {
+                font-family:Helvetica, sans-serif;
+                font-size:20px;
+                background-color: #359db8;
+                color: white;
+                font-weight: bold;
+            }
+            
+            #categoria {
+                font-family:Helvetica, sans-serif;
+                font-size:20px; 
+            }
+            
+            #idioma {
+                font-family:Helvetica, sans-serif;
+                font-size:20px; 
+            }
+            
+            #atuação {
+                font-family:Helvetica, sans-serif;
+                font-size:20px; 
+            }
+
+            li {
+                font-weight: bold;
+                list-style: none; 
+                margin: 30px;
+                height: 30px;
+                display: inline;
+                color: white;
+            }
+            
+            li a {
+                font-weight: bold;
+                padding: 10px 20px; 
+                margin:0;
+                border: 0px solid #f00; 
+                text-decoration: none;
+                color:#FFF;
+            }
+            
+            li a:hover {
+                font-weight: bold;
+                color: #f9e03c; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="menu-social"><center>
+        <br>
+            <ul>
+                <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                <li>     </li>
+                <li><a href="http://www.instagram.com"><i class="fab fa-instagram fa-lg"></i></a></li>
+                <li>     </li>
+                <li><a href="http://www.youtube.com"><i class="fab fa-youtube fa-lg"></i></a></li>
+            </ul></center>
+        <br>
+        </div>
+        <div id="header"><a href="/IntercambioFinal/index.html"><img src="imagens/topo-site.jpg" width="100%" height="auto" alt="Encontre seu intercâmbio"/></a></div>
+        
+        <div id="menu-site"><center>
+            <ul>
+                <li><a href="/IntercambioFinal/encontre.html">ENCONTRE</a></li>
+                <li>  |  </li>
+                <li><a href="/IntercambioFinal/cadastro.html">CADASTRO</a></li>
+                <li>  |  </li>
+                <li><a href="/IntercambioFinal/noticias.html">NOTÍCIAS</a></li>
+        <br>
+        <br>
+        <br>
+            </ul></center>
+        </div>
+                <div id="h1">
+                    <br>
+                    <center>Pesquise os intercâmbios com inscrições abertas</center>
+                    <br>
+                </div>    
+                    
+        <div id="busca"><center>
+                
+            <div style="margin: 0px 0px 0px 280px; text-align: center; width: 70%;">
+                <div style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 13%;">
+                    
+                    <p>Você busca por:</p>
+                    
+                </div>
+                
+                    <div style="float: left; margin: 10px 5px 0px 5px; text-align: justify; width: 13%;">
+                        
+                        <select id="categoria">
+                            <option value="none"></option>
+                            <option value="graduação">Graduação</option>
+                            <option value="mestrado">Mestrado</option>
+                            <option value="voluntariado">Voluntariado</option>
+                        </select>
+                    </div>
+                
+                <div style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 16%;">
+                    
+                    <p>Área de atuação:</p>
+                    
+                </div>
+                <div style="float: left; margin: 10px 5px 0px 5px; text-align: justify; width: 13%;">
+                    
+                        <select id="atuação">
+                            <option value="none"></option>
+                            <option value="direito">Direito</option>
+                            <option value="negócios">Negócios</option>
+                            <option value="saúde">Saúde</option>
+                        </select>
+                </div>
+                
+               
+                <div style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 8%;">
+                    
+                    <p>Idioma:</p>
+                    
+                </div>
+                <div style="float: left; margin: 10px 5px 0px 5px; text-align: justify; width: 13%;">
+                    
+                        <select id="idioma">
+                            <option value="none"></option>
+                            <option value="alemão">Alemão</option>
+                            <option value="espanhol">Espanhol</option>
+                            <option value="inglês">Inglês</option>
+                        </select>
+                </div>
+                   
+                    <div id="consultar" action="#" style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 8%;" >
+                    
+                    <p><i class="fas fa-search fa-lg"></i></p>
+                    
+                </div>
+<div style="clear: both;">
+</div>
+</div>
+        <br>
+
+        </div>
+    </body>
+</html>

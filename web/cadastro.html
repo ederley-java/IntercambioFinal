@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encontre seu intercâmbio - Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/4d680928e7.js"></script>
+        <script src="https://kit.fontawesome.com/1ff22901bb.js" crossorigin="anonymous"></script>
+        <style>
+           
+            * {
+                margin:0;
+            }
+            
+            #menu-social {
+                background-color:white;
+            }
+            
+            #menu-social li a{
+                font-weight: bold;
+                color: #359db8;
+            }
+
+            #menu-social li a:hover{
+                font-weight: bold;
+                color: #f9e03c;
+            }
+                
+            #menu-site {
+                font-family:Helvetica, sans-serif;
+                font-size:20px;
+                background-color: #359db8;
+            }
+            
+            #header {
+                background-color: #359db8;                
+            }
+            
+            #h1 {
+                font-family:Helvetica, sans-serif;
+                font-size:30px;
+                font-weight: bold;
+                background-color: #359db8;
+                color: #f9e03c;
+            }
+            
+            #cadastro {
+                font-family:Helvetica, sans-serif;
+                font-size:20px;
+                background-color: #359db8;
+                color: white;
+                font-weight: bold;
+            }
+            
+            #nome {
+                font-family:Helvetica, sans-serif;
+                font-size:20px; 
+            }
+            
+            #email {
+                font-family:Helvetica, sans-serif;
+                font-size:20px; 
+            }
+            
+            #categoria {
+                font-family:Helvetica, sans-serif;
+                font-size:20px; 
+            }
+
+            li {
+                font-weight: bold;
+                list-style: none; 
+                margin: 30px;
+                height: 30px;
+                display: inline;
+                color: white;
+            }
+            
+            li a {
+                font-weight: bold;
+                padding: 10px 20px; 
+                margin:0;
+                border: 0px solid #f00; 
+                text-decoration: none;
+                color:#FFF;
+            }
+            
+            li a:hover {
+                font-weight: bold;
+                color: #f9e03c; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="menu-social"><center>
+        <br>
+            <ul>
+                <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                <li>     </li>
+                <li><a href="http://www.instagram.com"><i class="fab fa-instagram fa-lg"></i></a></li>
+                <li>     </li>
+                <li><a href="http://www.youtube.com"><i class="fab fa-youtube fa-lg"></i></a></li>
+            </ul></center>
+        <br>
+        </div>
+        <div id="header"><a href="/IntercambioFinal/index.html"><img src="imagens/topo-site.jpg" width="100%" height="auto" alt="Encontre seu intercâmbio"/></a></div>
+        
+        <div id="menu-site"><center>
+            <ul>
+                <li><a href="/IntercambioFinal/encontre.html">ENCONTRE</a></li>
+                <li>  |  </li>
+                <li><a href="/IntercambioFinal/cadastro.html">CADASTRO</a></li>
+                <li>  |  </li>
+                <li><a href="/IntercambioFinal/noticias.html">NOTÍCIAS</a></li>
+        <br>
+        <br>
+        <br>
+            </ul></center>
+        </div>
+                <div id="h1">
+                    <br>
+                    <center>Cadastre-se e fique por dentro das novidades!</center>
+                    <br>
+                </div>    
+                    
+        <div id="cadastro"><center>
+                
+            <div style="margin: 0px 0px 0px 280px; text-align: center; width: 75%;">
+                
+
+                <form action="Cadastro.java" method="post">
+                    
+                <div style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 4%;">
+                    
+                    <p>Nome:</p>
+                    
+                </div>
+                
+                    <div style="float: left; margin: 10px 5px 0px 5px; text-align: justify; width: 18%;">
+                        
+                        <input type="text" name="nome" value="${cadastroBean.cadastro.nome}" id="nome">
+
+                    </div>
+                
+                <div style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 5%;">
+                    
+                    <p>E-mail:</p>
+                    
+                </div>
+                
+                    <div style="float: left; margin: 10px 5px 0px 5px; text-align: justify; width: 18%;">
+                        
+                        <input type="text" name="email" value="${cadastroBean.cadastro.email}" id="email">
+
+                    </div>
+                
+               
+                <div style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 7%;">
+                    
+                    <p>Interesse:</p>
+                    
+                </div>
+                <div style="float: left; margin: 10px 5px 0px 5px; text-align: justify; width: 12%;">
+                    
+                        <select id="categoria">
+                            <option value="none"></option>
+                            <option value="graduação">Graduação</option>
+                            <option value="mestrado">Mestrado</option>
+                            <option value="voluntariado">Voluntariado</option>
+                        </select>
+                </div>
+                   
+                    <div id="consultar" style="float: left; margin: 10px 10px 0px 5px; text-align: justify; width: 8%;" >
+                    
+                    <p><button type="submit"> <i class="fas fa-search fa-lg"></i></button></p>
+                    
+                </div>
+<div style="clear: both;">
+</div>
+</div>
+        <br>
+
+        </div>
+    </body>
+</html>
